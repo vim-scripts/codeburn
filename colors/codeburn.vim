@@ -5,7 +5,7 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let colors_name = "codeburn-0.1"
+let colors_name = "codeburn-0.2"
 
 if version >= 700
   " NERDTree current 
@@ -24,19 +24,17 @@ if version >= 700
   "PmenuThumb
 endif
 
-"hi Normal    guifg=gray30   guibg=#e0dcd9
-"hi Normal    guifg=gray30   guibg=#d0ccc9
-hi Normal    guifg=gray30   guibg=#d8d4d4
+hi Normal    guifg=gray20   guibg=#dcd8d8
 
 hi ModeMsg guifg=gray10 guibg=#B3C71E gui=none
 hi MoreMsg guifg=gray10 guibg=#B3C71E gui=none
 hi Question guifg=gray10 guibg=#B3C71E gui=none
-hi WarningMsg guifg=#600000  gui=none guibg=#d8d4d4
+hi WarningMsg guifg=#600000  gui=none guibg=#dcd8d8
 
 " Html-Titles
-hi Title      guifg=gray30 gui=none 
+hi Title      guifg=gray20 gui=none 
 
-hi Underlined  guifg=gray30 gui=underline
+hi Underlined  guifg=gray20 gui=underline
 hi Cursor    guifg=white   guibg=#888480
 hi lCursor   guifg=black   guibg=white
 hi LineNr    guifg=#B0B1A1
@@ -48,25 +46,21 @@ hi StatusLineNC guifg=gray40 guibg=#ABA7A4 gui=none
 hi VertSplit guifg=#ABA7A4 guibg=#ABA7A4 gui=NONE
 
 " unused areas marked with ~
-hi NonText gui=none guifg=#d8d4d4
+hi NonText gui=none guifg=#dcd8d8
 
-hi Comment   guifg=#999999 gui=italic
+hi Comment   guifg=#909090 gui=italic
 
 " ruby: symbols
-hi Constant  guifg=#75722F
-hi Constant  guifg=#607800
-hi Constant  guifg=#3B306E
-hi Constant  guifg=#9966cc
+hi Constant  guifg=MediumSlateBlue 
 
-hi String    guifg=#8D9902
-hi String    guifg=#780078
 hi String    guifg=#3366cc
+hi String    guifg=DodgerBlue
 hi link Character String
 hi link Number Constant
 hi link Float Number
 
 " ruby: debug, mixin, scope, throw, python: def
-hi Statement guifg=gray30 gui=none
+hi Statement guifg=gray20 gui=none
 hi Keyword guifg=#605118 gui=none
 
 " ruby: interpolation
@@ -74,26 +68,25 @@ hi Operator gui=none
 
 " HTML: arguments
 " Ruby: classname
-hi Type  gui=none guifg=#996600
+hi Type  gui=none guifg=SaddleBrown
 
 " Python: Standard exceptions, True&False
 ""hi Structure  guifg=Sienna gui=bold,underline
 
 " Ruby: method definitions and calls
 hi Identifier guifg=gray10
-hi Function   guifg=#663300
+hi Function   guifg=#c2590e
 
-hi Directory   guifg=#996600
+hi Directory   guifg=SaddleBrown
 
 " do ..end
-hi Repeat guifg=#996666 gui=none
 hi Repeat guifg=#660000 gui=none
 
 " Ruby: if..else..end
 hi Conditional guifg=#990000
 
-" Ruby: require
-hi PreProc    guifg=#64634B gui=none
+" Ruby: require, labels in .vim, 
+hi PreProc    guifg=DarkGoldenrod gui=none
 
 hi Folded guifg=#64634B guibg=#c8c4c0 gui=none
 
@@ -146,7 +139,7 @@ hi link hamlPreDef hamlHtmlTag
 hi link hmlHtmlTagEndl hamlHtmlTag
 
 " hi rubyASCIICode
-hi rubyAccess guifg=#939264
+hi rubyAccess guifg=Brown
 "hi rubyAttribute guifg=red gui=underline
 "hi rubyBlock                   gui=underline
 "hi rubyBlockArgument gui=underline
@@ -172,7 +165,7 @@ hi link rubyDefine Function
 "hi rubyError
 "hi rubyEscape
 "hi rubyEval
-hi rubyException               guifg=#B8521F
+hi rubyException               guifg=Red
 "hi rubyExprSubst               gui=underline        guifg=#FF4500
 "hi rubyFloat
 ""hi rubyFunction                gui=none        guifg=#784830
@@ -199,12 +192,12 @@ hi link rubyModule Type
 hi link rubyOperator Normal
 "hi rubyOptDoBlock gui=underline
 "hi rubyOptDoLine
-hi rubyPredefinedConstant      guifg=gray40
-hi rubyPredefinedIdentifier    guifg=gray40
-hi rubyPredefinedVariable      guifg=gray40
+hi rubyPredefinedConstant      guifg=gray30
+hi rubyPredefinedIdentifier    guifg=gray30
+hi rubyPredefinedVariable      guifg=gray30
 "hi rubyPseudoVariable
 "hi rubySharpBang               gui=            guifg=            guibg=
 "hi rubySpaceError
-hi rubySymbol                  gui=none        guifg=#663399
+hi rubySymbol guifg=Purple
 
 "hi rubyTodo                    gui=            guifg=            guibg=
